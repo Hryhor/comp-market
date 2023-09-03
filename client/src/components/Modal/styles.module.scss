@@ -1,0 +1,234 @@
+a {
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    color: #01579B;
+    transition: color ease-in-out .5s;
+
+    &:hover {
+        color: darken(#01579B, 10%);
+    }
+}
+
+.modalWindow.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: all .5s ease 0s;
+    transform: perspective(600px) translate(0px, 0px) rotateX(0deg);
+}
+
+.modalWindow.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease 0s;
+
+    transition: all .5s ease 0s;
+    opacity: 0;
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+.modalWindow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(2px);
+    z-index: 100;
+}
+
+.modalBody {
+    position: fixed;
+    width: 280px;
+    height: 350px;
+    padding: 24px;
+    background-color: #fff;
+}
+
+.modalHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 24px;
+
+    p {
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;  
+    }
+}
+
+.modalBtnClose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+
+    img {
+        object-fit: contain;
+    }
+}
+
+.modalForm {
+    width: 100%;
+}
+
+.modalInput {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 9px 8px;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+    border-radius: 4px;
+    border: 1px solid #CCC;
+    margin-bottom: 12px;
+
+    &::placeholder {
+        font-family: 'Lato', sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        color: #9A9EA5;
+    }
+}
+
+.modalInputPassword {
+    background-image: url('./eye.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.modalForgotPasswordLink {
+    margin-bottom: 12px;
+    
+    a {
+        font-family: 'Lato', sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 12px;
+        color: #01579B;
+        &:hover {
+            color: #01579B;
+        }
+    }
+}
+
+.modalBtnSignIn {
+    background-color: #01579B;
+    color: #fff;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 10px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 24px;
+    padding: 16px 6px;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    transition: background-color ease-in-out .5s;
+
+    &:hover {
+        background-color: darken(#01579B, 10%);
+    }
+    
+}
+
+.modalText {
+    margin-bottom: 24px;
+
+    p {
+        font-family: 'Lato', sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 12px;
+        color: #ccc;
+        text-align: center;
+    }
+}
+
+.modalBtnWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.modalBtnGoogle,
+.modalBtnFacebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 128px;
+    height: 36px;
+    padding: 6px 24px;
+    border-radius: 4px;
+}
+
+.modalBtnGoogle {
+    background: #EA4335;
+    color: #fff;
+
+    transition: background-color ease-in-out .5s;
+
+    &:hover {
+        background-color: darken(#EA4335, 10%);
+    }
+}
+
+.modalBtnFacebook {
+    background: #4267B2;
+    color: #fff;
+
+    transition: background-color ease-in-out .5s;
+
+    &:hover {
+        background-color: darken(#4267B2, 10%);
+    }
+}
+
+.modalSignUp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        font-family: 'Lato', sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 12px;
+        margin-right: 8px;
+    }
+
+    a {
+        font-family: 'Lato', sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 12px;
+        color: #01579B;
+        &:hover {
+            color: #01579B;
+        }
+    }
+}

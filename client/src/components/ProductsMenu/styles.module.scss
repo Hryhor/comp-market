@@ -1,0 +1,25 @@
+.productsMenu {
+    max-width: 346px;
+}
+
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.04);
+    padding: 12px;
+    cursor: pointer;
+
+    &:hover { 
+        transform: translateX(-5px);
+        transition: .5s;
+    }
+    
+    .listItemLink {
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #060F42;
+    }
+}

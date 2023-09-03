@@ -1,0 +1,50 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.catalog {
+    display: flex;
+    align-items: center;
+    background-color: #06A56C;
+    color: #F4F8FB;
+    text-transform: uppercase;
+    padding: 12px 9px;
+    transition: background-color ease-in-out .5s;
+
+    span {
+        margin-top: 4px;
+    }
+
+    img {
+        margin-left: 8px;
+    }
+
+    &:hover {
+        background-color: darken(#06A56C, 5%);
+    }
+}
+
+.selectProductsBlock {
+    display: flex;
+    align-items: center;
+}
+
+.selectProductsBlockItem {
+    cursor: pointer;
+    margin-right: 15px;
+    
+    &:last-child {
+        margin-right: 15px;
+    }
+}
+
+.tel {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    line-height: 28px;
+    color: #060F42;
+}
