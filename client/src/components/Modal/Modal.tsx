@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
+import ButtonClose from '../ButtonClose/ButtonClose';
+
 import close from './close.svg';
 import eye from './eye.svg';
 import styles from './styles.module.scss';
@@ -19,9 +22,7 @@ const Modal: React.FC<ModalProps> = ({ open, setOpen }) => {
             <div className={styles.modalBody} onClick={e => e.stopPropagation()}>       
                 <div className={styles.modalHeader}>
                     <p>Вход</p>
-                    <button className={styles.modalBtnClose} onClick={handleClick}>
-                        <img src={close} />
-                    </button>
+                    <ButtonClose onClick={handleClick} />
                 </div>
                 <form className={styles.modalForm}>
                     <input className={styles.modalInput} placeholder='Ваш номер телефона' />
